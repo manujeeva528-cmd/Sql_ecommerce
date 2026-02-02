@@ -1,10 +1,10 @@
--- select sum(amount) as total_revenue from payments;
--- select * from order_item;
--- select p.product_name ,sum(oi.quantity*p.price) from order_item oi join products p on  
--- oi.product_id=p.product_id
--- join orders o on oi.order_id = o.order_id
--- where o.order_status='delivered'
--- group by p.product_name;
+select sum(amount) as total_revenue from payments;
+select * from order_item;
+select p.product_name ,sum(oi.quantity*p.price) from order_item oi join products p on  
+oi.product_id=p.product_id
+join orders o on oi.order_id = o.order_id
+where o.order_status='delivered'
+group by p.product_name;
 
 
 SELECT c.name,
